@@ -10,11 +10,6 @@ document
 
 function digitPressed(ev) {
   const digit = ev.target.innerText;
-  console.log(display.value)
-  if (display.value == 0) {
-    display.value = digit
-    return 1
-  }
   display.value += digit;
 }
 
@@ -23,9 +18,6 @@ const operPressed = (ev) => {
 
   if (display.value === "") display.value += "0";
   if (display.value === "" && oper === '.') display.value += '0.'
-  if (display.value.includes('^')) {
-
-  }
 
   if (opers.includes(display.value[display.value.length - 1])) {
     const arrDigit = display.value.split("");
