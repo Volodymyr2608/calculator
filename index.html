@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calc">
+      <input type="text" class="display" readonly placeholder="0" />
+      <div class="warn">
+        <span class="warn_span">На 0 ділити неможна!</span>
+      </div>
+      <div class="digits">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+      </div>
+      <div class="opers">
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <button>.</button>
+      </div>
+      <div class="baseFunction">
+        <button class="baseFunction__power">x<sup class="power">2</sup></button>
+        <button class="baseFunction__power">x<sup class="power">3</sup></button>
+      </div>
+      <button class="eq">=</button>
+      <div class="reset">
+        <button>C</button>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
